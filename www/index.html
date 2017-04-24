@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Langendorf app</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Langendorf</h1>
+      </ion-header-bar>
+      <ion-slide-box>
+    <ion-slide class="has-header">
+        <div class="slide_container">
+          <div class="slide_skip"><a href="scancode.html">skip</a></div>
+          <div class="slide_img"><img src="img/ica-slidebox-img-1.png"></div>
+          <div class="slide_text"> 
+            <h1>Welcome to the Langendorf app!</h1>
+            <p>With <strong>Langendorf app</strong> you can scan the barcode on the back of your truck which will give you usefull <strong>documentation</strong> about your trailer.</p>
+          </div>
+        </div>
+    </ion-slide>
+    <ion-slide class="has-header">
+        <div class="slide_container">
+          <div class="slide_skip"><a href="scancode.html">skip</a></div>
+          <div class="slide_img"><img src="img/ica-slidebox-img-2.png"></div>
+          <div class="slide_text"> 
+            <h1>Scan the code!</h1>
+            <p>You can scan <strong>the barcode</strong> on the back of the trailer with your phone, you will <strong>automaticly</strong> gain access to all documentation related to your trailer</p>
+          </div>
+        </div>
+    </ion-slide>
+    <ion-slide class="has-header">
+        <div class="slide_container">
+          <div class="slide_skip"><a href="scancode.html">skip</a></div>
+          <div class="slide_img"><img src="img/ica-slidebox-img-3.png"></div>
+          <div class="slide_text"> 
+            <h1>Let's start!</h1>
+            <p>Press continue and enjoy all documentation</p>
+            <a href="scancode.html">
+              <div class="slide_button">
+                Continue
+              </div>
+            </a>
+          </div>
+          
+        </div>
+    </ion-slide>
+</ion-slide-box>
+    </ion-pane>
+  </body>
+</html>
